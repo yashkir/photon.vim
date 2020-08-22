@@ -35,7 +35,7 @@
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
 
     # Background
-    bg = ["#262626", 0, "black"]
+    bg = ["#000000", 0, "black"]
 
     # Darker background shades
     bgd_1 = ["#1c1c1c", 234, "black"]
@@ -47,7 +47,7 @@
     bgl_4 = ["#626262", 241, "darkgray"]
 
     # Foreground
-    fg = ["#c6c6c6", 251, "white"]
+    fg = ["#c6c6c6", 253, "white"]
 
     # Accents
     purple = ["#af87d7", 140, "darkmagenta"]
@@ -92,7 +92,7 @@
     highlights = [
         [ "Normal", bg, fg, "NONE" ],
         [ "NonText", "bg", bgl_3, "NONE" ],
-        [ "Comment", "bg", bgl_4, "NONE" ],
+        [ "Comment", "bg", bgl_4, "italic" ],
         [ "Conceal", "bg", bgl_4, "NONE" ],
 
         [ "Constant", "bg", purple, "NONE" ],
@@ -112,7 +112,7 @@
         [ "Keyword", "Statement" ],
         [ "Exception", "Statement" ],
 
-        [ "Operator", "bg", fg, "NONE" ],
+        [ "Operator", "Statement"],
 
         [ "PreProc", "bg", grey, "NONE" ],
         [ "Include", "PreProc" ],
@@ -120,7 +120,7 @@
         [ "Macro", "PreProc" ],
         [ "PreCondit", "PreProc" ],
 
-        [ "Type", "bg", fg, "NONE" ],
+        [ "Type", "Statement"],
         [ "StorageClass", "Type" ],
         [ "Structure", "Type" ],
         [ "Typedef", "Type" ],
@@ -189,10 +189,10 @@
 
         [ "QuickFixLine", bgd_1, "NONE", "NONE" ],
 
-        [ "DiffAdd", bgl_1, green, "NONE" ],
-        [ "DiffChange", bgl_1, "NONE", "NONE" ],
-        [ "DiffDelete", bgl_1, red, "NONE" ],
-        [ "DiffText", bgl_1, yellow, "NONE" ],
+        [ "DiffAdd", bgd_1, green, "NONE" ],
+        [ "DiffChange", bgd_1, "NONE", "NONE" ],
+        [ "DiffDelete", bgd_1, red, "NONE" ],
+        [ "DiffText", bgd_1, yellow, "NONE" ],
         [ "diffAdded", "DiffAdd" ],
         [ "diffRemoved", "DiffDelete" ],
 
