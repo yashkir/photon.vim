@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/axvr/photon.vim
 " Description: An elegant, dark colour scheme with minimal syntax highlighting
 " Licence:     MIT (2019)
-" Last Change: 2020-06-27
+" Last Change: 2020-08-21
 
 hi clear
 if exists("syntax_on")
@@ -13,7 +13,7 @@ endif
 let colors_name = "photon"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=235 ctermfg=251 cterm=NONE guibg=#262626 guifg=#c6c6c6 gui=NONE
+    hi Normal ctermbg=0 ctermfg=251 cterm=NONE guibg=#262626 guifg=#c6c6c6 gui=NONE
 
     set background=dark
 
@@ -52,8 +52,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi FoldColumn ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#626262 gui=NONE
     hi Folded ctermbg=234 ctermfg=243 cterm=NONE guibg=#1c1c1c guifg=#767676 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=243 cterm=NONE guibg=NONE guifg=#767676 gui=NONE
-    hi IncSearch ctermbg=167 ctermfg=235 cterm=NONE guibg=#d75f5f guifg=#262626 gui=NONE
-    hi Search ctermbg=140 ctermfg=235 cterm=NONE guibg=#af87d7 guifg=#262626 gui=NONE
+    hi IncSearch ctermbg=167 ctermfg=0 cterm=NONE guibg=#d75f5f guifg=#262626 gui=NONE
+    hi Search ctermbg=140 ctermfg=0 cterm=NONE guibg=#af87d7 guifg=#262626 gui=NONE
     hi Directory ctermbg=NONE ctermfg=140 cterm=NONE guibg=NONE guifg=#af87d7 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=167 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi SpellBad ctermbg=NONE ctermfg=132 cterm=underline guibg=NONE guifg=#af5f87 gui=underline
