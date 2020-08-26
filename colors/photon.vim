@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/axvr/photon.vim
 " Description: An elegant, dark colour scheme with minimal syntax highlighting
 " Licence:     MIT (2019)
-" Last Change: 2020-08-21
+" Last Change: 2020-08-26
 
 hi clear
 if exists("syntax_on")
@@ -17,22 +17,22 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
     set background=dark
 
-    hi NonText ctermbg=bg ctermfg=238 cterm=NONE guibg=bg guifg=#444444 gui=NONE
-    hi Comment ctermbg=bg ctermfg=241 cterm=italic guibg=bg guifg=#626262 gui=italic
-    hi Conceal ctermbg=bg ctermfg=241 cterm=NONE guibg=bg guifg=#626262 gui=NONE
-    hi Constant ctermbg=bg ctermfg=140 cterm=NONE guibg=bg guifg=#af87d7 gui=NONE
-    hi Identifier ctermbg=bg ctermfg=253 cterm=NONE guibg=bg guifg=#c6c6c6 gui=NONE
-    hi Statement ctermbg=bg ctermfg=243 cterm=NONE guibg=bg guifg=#767676 gui=NONE
-    hi PreProc ctermbg=bg ctermfg=243 cterm=NONE guibg=bg guifg=#767676 gui=NONE
-    hi Special ctermbg=NONE ctermfg=243 cterm=NONE guibg=NONE guifg=#767676 gui=NONE
+    hi NonText ctermbg=NONE ctermfg=238 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
+    hi Comment ctermbg=NONE ctermfg=241 cterm=italic guibg=NONE guifg=#626262 gui=italic
+    hi Conceal ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#626262 gui=NONE
+    hi Constant ctermbg=NONE ctermfg=140 cterm=NONE guibg=NONE guifg=#af87d7 gui=NONE
+    hi Identifier ctermbg=NONE ctermfg=253 cterm=NONE guibg=NONE guifg=#c6c6c6 gui=NONE
+    hi Statement ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi PreProc ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi Special ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Error ctermbg=NONE ctermfg=132 cterm=NONE guibg=NONE guifg=#af5f87 gui=NONE
     hi Warning ctermbg=NONE ctermfg=179 cterm=NONE guibg=NONE guifg=#d7af5f gui=NONE
-    hi ModeMsg ctermbg=NONE ctermfg=243 cterm=NONE guibg=NONE guifg=#767676 gui=NONE
+    hi ModeMsg ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Todo ctermbg=NONE ctermfg=167 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi Underlined ctermbg=NONE ctermfg=253 cterm=underline guibg=NONE guifg=#c6c6c6 gui=underline
     hi StatusLine ctermbg=237 ctermfg=140 cterm=NONE guibg=#3a3a3a guifg=#af87d7 gui=NONE
-    hi StatusLineNC ctermbg=236 ctermfg=243 cterm=NONE guibg=#303030 guifg=#767676 gui=NONE
-    hi WildMenu ctermbg=236 ctermfg=167 cterm=NONE guibg=#303030 guifg=#d75f5f gui=NONE
+    hi StatusLineNC ctermbg=236 ctermfg=244 cterm=NONE guibg=#303030 guifg=#808080 gui=NONE
+    hi WildMenu ctermbg=236 ctermfg=179 cterm=NONE guibg=#303030 guifg=#d7af5f gui=NONE
     hi VertSplit ctermbg=236 ctermfg=236 cterm=NONE guibg=#303030 guifg=#303030 gui=NONE
     hi Title ctermbg=NONE ctermfg=253 cterm=bold guibg=NONE guifg=#c6c6c6 gui=bold
     hi LineNr ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#626262 gui=NONE
@@ -40,16 +40,16 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Cursor ctermbg=140 ctermfg=253 cterm=NONE guibg=#af87d7 guifg=#c6c6c6 gui=NONE
     hi CursorLine ctermbg=236 ctermfg=NONE cterm=NONE guibg=#303030 guifg=NONE gui=NONE
     hi ColorColumn ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1c1c1c guifg=NONE gui=NONE
-    hi SignColumn ctermbg=NONE ctermfg=243 cterm=NONE guibg=NONE guifg=#767676 gui=NONE
+    hi SignColumn ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Visual ctermbg=237 ctermfg=NONE cterm=NONE guibg=#3a3a3a guifg=NONE gui=NONE
     hi VisualNOS ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
-    hi Pmenu ctermbg=237 ctermfg=NONE cterm=NONE guibg=#3a3a3a guifg=NONE gui=NONE
+    hi Pmenu ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1c1c1c guifg=NONE gui=NONE
     hi PmenuSbar ctermbg=236 ctermfg=NONE cterm=NONE guibg=#303030 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=236 ctermfg=140 cterm=NONE guibg=#303030 guifg=#af87d7 gui=NONE
     hi PmenuThumb ctermbg=167 ctermfg=NONE cterm=NONE guibg=#d75f5f guifg=NONE gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#626262 gui=NONE
-    hi Folded ctermbg=234 ctermfg=243 cterm=NONE guibg=#1c1c1c guifg=#767676 gui=NONE
-    hi SpecialKey ctermbg=NONE ctermfg=243 cterm=NONE guibg=NONE guifg=#767676 gui=NONE
+    hi Folded ctermbg=234 ctermfg=244 cterm=NONE guibg=#1c1c1c guifg=#808080 gui=NONE
+    hi SpecialKey ctermbg=NONE ctermfg=244 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi IncSearch ctermbg=167 ctermfg=0 cterm=NONE guibg=#d75f5f guifg=#000000 gui=NONE
     hi Search ctermbg=140 ctermfg=0 cterm=NONE guibg=#af87d7 guifg=#000000 gui=NONE
     hi Directory ctermbg=NONE ctermfg=140 cterm=NONE guibg=NONE guifg=#af87d7 gui=NONE
@@ -62,7 +62,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffChange ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1c1c1c guifg=NONE gui=NONE
     hi DiffDelete ctermbg=234 ctermfg=132 cterm=NONE guibg=#1c1c1c guifg=#af5f87 gui=NONE
     hi DiffText ctermbg=234 ctermfg=179 cterm=NONE guibg=#1c1c1c guifg=#d7af5f gui=NONE
-    hi helpHyperTextJump ctermbg=bg ctermfg=140 cterm=NONE guibg=bg guifg=#af87d7 gui=NONE
+    hi helpHyperTextJump ctermbg=NONE ctermfg=140 cterm=NONE guibg=NONE guifg=#af87d7 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -71,13 +71,13 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 
     set background=dark
 
-    hi NonText ctermbg=bg ctermfg=darkgray cterm=NONE
-    hi Comment ctermbg=bg ctermfg=darkgray cterm=italic
-    hi Conceal ctermbg=bg ctermfg=darkgray cterm=NONE
-    hi Constant ctermbg=bg ctermfg=darkmagenta cterm=NONE
-    hi Identifier ctermbg=bg ctermfg=white cterm=NONE
-    hi Statement ctermbg=bg ctermfg=darkgray cterm=NONE
-    hi PreProc ctermbg=bg ctermfg=darkgray cterm=NONE
+    hi NonText ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi Comment ctermbg=NONE ctermfg=darkgray cterm=italic
+    hi Conceal ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi Constant ctermbg=NONE ctermfg=darkmagenta cterm=NONE
+    hi Identifier ctermbg=NONE ctermfg=white cterm=NONE
+    hi Statement ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi PreProc ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Special ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Error ctermbg=NONE ctermfg=darkred cterm=NONE
     hi Warning ctermbg=NONE ctermfg=darkyellow cterm=NONE
@@ -86,7 +86,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Underlined ctermbg=NONE ctermfg=white cterm=underline
     hi StatusLine ctermbg=darkgray ctermfg=darkmagenta cterm=NONE
     hi StatusLineNC ctermbg=darkgray ctermfg=darkgray cterm=NONE
-    hi WildMenu ctermbg=darkgray ctermfg=red cterm=NONE
+    hi WildMenu ctermbg=darkgray ctermfg=darkyellow cterm=NONE
     hi VertSplit ctermbg=darkgray ctermfg=darkgray cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=bold
     hi LineNr ctermbg=NONE ctermfg=darkgray cterm=NONE
@@ -97,7 +97,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SignColumn ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Visual ctermbg=darkgray ctermfg=NONE cterm=NONE
     hi VisualNOS ctermbg=darkgray ctermfg=NONE cterm=NONE
-    hi Pmenu ctermbg=darkgray ctermfg=NONE cterm=NONE
+    hi Pmenu ctermbg=black ctermfg=NONE cterm=NONE
     hi PmenuSbar ctermbg=darkgray ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=darkgray ctermfg=darkmagenta cterm=NONE
     hi PmenuThumb ctermbg=red ctermfg=NONE cterm=NONE
@@ -116,7 +116,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi DiffChange ctermbg=black ctermfg=NONE cterm=NONE
     hi DiffDelete ctermbg=black ctermfg=darkred cterm=NONE
     hi DiffText ctermbg=black ctermfg=darkyellow cterm=NONE
-    hi helpHyperTextJump ctermbg=bg ctermfg=darkmagenta cterm=NONE
+    hi helpHyperTextJump ctermbg=NONE ctermfg=darkmagenta cterm=NONE
 endif
 
 hi! link Character Constant

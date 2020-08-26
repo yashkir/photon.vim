@@ -52,7 +52,8 @@
     # Accents
     purple = ["#af87d7", 140, "darkmagenta"]
     orange = ["#d75f5f", 167, "red"]
-    grey = ["#767676", 243, "darkgray"]
+    #grey = ["#767676", 243, "darkgray"]
+    grey = ["#808080", 244, "darkgray"]
     green = ["#87af87", 108, "darkgreen"]
     red = ["#af5f87", 132, "darkred"]
     yellow = ["#d7af5f", 179, "darkyellow"]
@@ -91,21 +92,21 @@
 
     highlights = [
         [ "Normal", bg, fg, "NONE" ],
-        [ "NonText", "bg", bgl_3, "NONE" ],
-        [ "Comment", "bg", bgl_4, "italic" ],
-        [ "Conceal", "bg", bgl_4, "NONE" ],
+        [ "NonText", "NONE", bgl_3, "NONE" ],
+        [ "Comment", "NONE", bgl_4, "italic" ],
+        [ "Conceal", "NONE", bgl_4, "NONE" ],
 
-        [ "Constant", "bg", purple, "NONE" ],
+        [ "Constant", "NONE", purple, "NONE" ],
         [ "Character", "Constant" ],
         [ "Number", "Constant" ],
         [ "Float", "Number" ],
         [ "Boolean", "Constant" ],
         [ "String", "Constant" ],
 
-        [ "Identifier", "bg", fg, "NONE" ],
+        [ "Identifier", "NONE", fg, "NONE" ],
         [ "Function", "Identifier" ],
 
-        [ "Statement", "bg", grey, "NONE" ],
+        [ "Statement", "NONE", grey, "NONE" ],
         [ "Conditonal", "Statement" ],
         [ "Repeat", "Statement" ],
         [ "Label", "Statement" ],
@@ -114,7 +115,7 @@
 
         [ "Operator", "Statement"],
 
-        [ "PreProc", "bg", grey, "NONE" ],
+        [ "PreProc", "NONE", grey, "NONE" ],
         [ "Include", "PreProc" ],
         [ "Define", "PreProc" ],
         [ "Macro", "PreProc" ],
@@ -152,7 +153,7 @@
         [ "TabLine", "StatusLineNC" ],
         [ "TabLineFill", "StatusLineNC" ],
         [ "TabLineSel", "StatusLine" ],
-        [ "WildMenu", bgl_1, orange, "NONE" ],
+        [ "WildMenu", bgl_1, yellow, "NONE" ],
         [ "VertSplit", bgl_1, bgl_1, "NONE" ],
 
         [ "Title", "NONE", fg, "bold" ],
@@ -168,7 +169,7 @@
         [ "Visual", bgl_2, "NONE", "NONE" ],
         [ "VisualNOS", bgl_3, "NONE", "NONE" ],
 
-        [ "Pmenu", bgl_2, "NONE", "NONE" ],
+        [ "Pmenu", bgd_1, "NONE", "NONE" ],
         [ "PmenuSbar", bgl_1, "NONE", "NONE" ],
         [ "PmenuSel", bgl_1, purple, "NONE" ],
         [ "PmenuThumb", orange, "NONE", "NONE" ],
@@ -196,7 +197,7 @@
         [ "diffAdded", "DiffAdd" ],
         [ "diffRemoved", "DiffDelete" ],
 
-        [ "helpHyperTextJump", "bg", purple, "NONE" ],
+        [ "helpHyperTextJump", "NONE", purple, "NONE" ],
         [ "htmlTag", "htmlTagName" ],
         [ "htmlEndTag", "htmlTag" ],
         [ "gitcommitSummary", "Title" ]
